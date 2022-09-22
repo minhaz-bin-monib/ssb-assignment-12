@@ -1,0 +1,93 @@
+@media(max-width:575px){
+    .nav-item {
+        padding: 0;
+        margin-bottom: 5px;
+    }
+
+    .navbar-light .navbar-nav .nav-link{
+        display: inline-block;
+    }
+
+    .navbar-collapse{
+        text-align: center;
+    }
+
+    .navbar-nav{
+        text-align: center;
+        background: #20202082;
+        border-radius: 20px;
+        display: inline-block;
+        padding: 20px 100px;
+        margin-top: 15px;
+    }
+
+    .banner-left {
+        
+        text-align: center;
+    }
+
+    .banner-left h1 {
+        font-size: 35px;    
+    }
+    .banner-left p {
+        font-size: 16px;
+        margin-bottom: 40px;
+    }
+
+    .btn-download, .btn-feature {
+        padding: 8px 20px;
+    }
+
+    .banner-right img {
+        width: 250px;
+        margin-top: 30px;
+    }
+    .banner {
+        flex-direction: column-reverse;
+    }
+
+    .banner-left {
+        height: 75vh;
+        
+    }
+
+    .pricing_plan {
+        justify-content: center;
+    }
+    .text h3 {
+        text-align: center;
+    }
+
+    .button_section {
+        text-align: center;
+       
+    }
+
+    .theme_section p {
+        font-size: 25px;
+        
+    }
+
+    .single-card {
+        margin-bottom: 30px;
+    }
+
+    .contact_section {
+        
+        padding-bottom: 380px;
+    }
+
+    .feature {
+        margin-top: 30px;
+    }
+}
+
+
+
+@media(max-width:375px){
+    .btn-download-mr{
+        margin-top: 15px;
+    }
+
+
+}

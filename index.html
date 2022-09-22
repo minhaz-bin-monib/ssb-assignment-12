@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>lucid</title>
-    <link rel="icon" href="https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,f_auto,q_auto:eco,dpr_1/nlrwo3kjxi6mgdyaechw">
+    <link rel="icon"
+        href="https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,f_auto,q_auto:eco,dpr_1/nlrwo3kjxi6mgdyaechw">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -17,6 +18,7 @@
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
 </head>
 
 <body>
@@ -31,7 +33,11 @@
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                             data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                             aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
+                            <div class="toggle">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
                         </button>
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
@@ -322,7 +328,7 @@
                         </div>
                     </div>
                 </div>
-                
+
             </div>
         </div>
     </section>
@@ -335,19 +341,15 @@
             <div class="row main_row">
                 <div class="col-md-8">
                     <div class="theme_section">
-                        <div class="text_one">
-                            <h2>Like what you see?</h2>
-                        </div>
-                        <div class="text_two">
-                            <h2>Get this great theme now!</h2>
-                        </div>
+                        <p><b>Like what you see?</b>Get this great theme now!</p>
+                        
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="button_section">
                         <a href="" class="btn btn-feature">view features</a>
 
-                        <a href="" class="btn btn-download">download now</a>
+                        <a href="" class="btn btn-download btn-download-mr">download now</a>
                     </div>
                 </div>
             </div>
@@ -568,19 +570,35 @@
     <script>
         $(document).ready(function () {
             $(".owl-carousel").owlCarousel({
-                items:2,
-                loop:true,
-                dots:true,
-                dotsEach:true,
-                autoplay:true,
-                autoplayTimeout:2000,
-                smartSpeed:1000,
+                items: 2,
+                loop: true,
+                dots: true,
+                dotsEach: true,
+                autoplay: true,
+                autoplayTimeout: 2000,
+                smartSpeed: 1000,
+                responsive: {
+                    0: {
+                        items: 1,
+                        nav: true
+                    },
+                    600: {
+                        items: 2,
+                        nav: false
+                    },
+                    
+                }
             }
-                
+
             );
         });
 
-        
+
+        // toggle bar js
+        let menutoggle = document.querySelector('.toggle');
+        menutoggle.onclick = function () {
+            menutoggle.classList.toggle('active')
+        }
     </script>
 
 </body>
